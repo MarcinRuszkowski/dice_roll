@@ -35,14 +35,19 @@ dice_art = {
 
 diceRolls = []
 
-amountOfRolls = 6
+amountOfRolls = 2
 for dice in range(amountOfRolls):
     diceRolls.append(randint(1, 6))
 
 for num in diceRolls:
-    print(dice_art.get(num))
+    for line in dice_art.get(num):
+        print(line)
 
+rolledValues = 0
+for num in diceRolls:
+    rolledValues += num
 
+print(rolledValues)
 
 
 
