@@ -70,7 +70,7 @@ def show_rolled_dice(diceRolls):
         for line in dice_art.get(num):
             print(line)
 
-
-diceRolls = roll_dice(3)
+amountOfRoll = int(input('How many rolls? '))
+diceRolls = roll_dice(amountOfRoll)
 show_rolled_dice(diceRolls)
 count_rolled_values(diceRolls)
