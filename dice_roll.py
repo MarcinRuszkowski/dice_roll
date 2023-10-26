@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 dice_art = {
     1: ("┌─────────┐",
@@ -32,3 +32,17 @@ dice_art = {
         "│  ●   ●  │",
         "└─────────┘")
 }
+
+diceRolls = []
+
+amountOfRolls = 6
+for dice in range(amountOfRolls):
+    diceRolls.append(randint(1, 6))
+
+for num in diceRolls:
+    print(dice_art.get(num))
+
+
+
+
+
